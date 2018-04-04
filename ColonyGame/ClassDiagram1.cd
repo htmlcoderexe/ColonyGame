@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ColonyGame.Assets" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAABAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ColonyGame.Console" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAACBAAEAAAA=</HashCode>
+      <FileName>Console.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ColonyGame.Main" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEEAAAAAAAxAAAAAIAAAAAAAAAAgAAAAAAAAAAAQ=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ColonyGame.Program" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ColonyGame.Components.Map" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BRAABAAABAAIAAAEAAAAAEAIAAiAAAMAABAAAAABAAA=</HashCode>
+      <FileName>Components\Map.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ColonyGame.Components.MapCreature" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAMAAAAAAAgAAAgBAEACgRAABEAAAAQABAJAAAQAgA=</HashCode>
+      <FileName>Components\MapCreature.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ColonyGame.Components.MapItem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAggAAAAAAAAAAQAAAAAAAAQAhAAAAAUYgA=</HashCode>
+      <FileName>Components\MapItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ColonyGame.Components.Stockpile" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAgAEBAggDAIAAAAAAEQAAAAAAAAAAAIAAAAQYgA=</HashCode>
+      <FileName>Components\Stockpile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ColonyGame.Components.Tasks.ComplexTask" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgQAIAAAACAAAAAAAIAAAAAAABACAAAA=</HashCode>
+      <FileName>Components\Tasks\ComplexTask.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ColonyGame.Components.Tasks.Drop" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAABACAAAA=</HashCode>
+      <FileName>Components\Tasks\Drop.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ColonyGame.Components.Tasks.Haul" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAQAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Tasks\Haul.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ColonyGame.Components.Tasks.ObtainItem" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Tasks\ObtainItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ColonyGame.Components.Tasks.Pickup" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAABACAAAA=</HashCode>
+      <FileName>Components\Tasks\Pickup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ColonyGame.Components.Tasks.WalkTo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAgQAAAAEAAgAAAAAAAAAAAAAABACAYAA=</HashCode>
+      <FileName>Components\Tasks\WalkTo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ColonyGame.GameScenes.MainGame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQCAABAMAAAAAAAEBAAACAAAAAABIBICACAAAgA=</HashCode>
+      <FileName>GameScenes\MainGame.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ColonyGame.Interfaces.IHotkeyable" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IHotkeyable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ColonyGame.Windows.ConsoleWindow" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\ConsoleWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ColonyGame.Windows.StatusWindow" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\StatusWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ColonyGame.IGameScene" Collapsed="true">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQCAAAAIAAAAAAAAAAAAAAAAAAAAABACACAAAAA=</HashCode>
+      <FileName>IGameScene.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ColonyGame.Interfaces.IActor" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IActor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ColonyGame.Interfaces.IDrawable" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDrawable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ColonyGame.Interfaces.IItemFilter" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IItemFilter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ColonyGame.Interfaces.IMapObject" Collapsed="true">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Interfaces\IMapObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ColonyGame.Interfaces.IMaterial" Collapsed="true">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAEAAA=</HashCode>
+      <FileName>Interfaces\IMaterial.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ColonyGame.Interfaces.IPositionFixed" Collapsed="true">
+    <Position X="10" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Interfaces\IPositionFixed.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ColonyGame.Interfaces.IPositionMoving" Collapsed="true">
+    <Position X="11.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPositionMoving.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ColonyGame.Interfaces.ISelectable" Collapsed="true">
+    <Position X="6.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Interfaces\ISelectable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ColonyGame.Interfaces.ITask" Collapsed="true">
+    <Position X="8.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAABACAAAA=</HashCode>
+      <FileName>Interfaces\ITask.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ColonyGame.Interfaces.IWalking" Collapsed="true">
+    <Position X="10" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IWalking.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ColonyGame.Interfaces.IZone" Collapsed="true">
+    <Position X="11.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Interfaces\IZone.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ColonyGame.Interfaces.TaskState" Collapsed="true">
+    <Position X="6.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAABAAAAAAAIAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Interfaces\ITask.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

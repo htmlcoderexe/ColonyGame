@@ -7,12 +7,13 @@ namespace ColonyGame
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
-    public class Game1 : Game
+    public class Main : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        IGameScene CurrentScene;
 
-        public Game1()
+        public Main()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
@@ -27,9 +28,28 @@ namespace ColonyGame
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            graphics.PreferredBackBufferWidth = 1200;
+            graphics.PreferredBackBufferHeight = 800;
+          // graphics.PreferMultiSampling = true;
+            graphics.ApplyChanges();
+            Content.RootDirectory = "Content";
+            Window.AllowUserResizing = true;
+            Window.ClientSizeChanged += new System.EventHandler<System.EventArgs>(Window_ClientSizeChanged);
+            IsMouseVisible = true;
             base.Initialize();
         }
+
+        private void Window_ClientSizeChanged(object sender, System.EventArgs e)
+        {
+            //graphics.PreferredBackBufferWidth = Window.ClientBounds.Width;
+            //graphics.PreferredBackBufferHeight = Window.ClientBounds.Height;
+            // graphics.ApplyChanges();
+
+
+            GraphicsDevice.Viewport = new Viewport(0, 0, Window.ClientBounds.Width, Window.ClientBounds.Height);
+            CurrentScene.ScreenResized(GraphicsDevice);
+        }
+
 
         /// <summary>
         /// LoadContent will be called once per game and is the place to load
@@ -39,8 +59,13 @@ namespace ColonyGame
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            Assets.Effects.Add("GUI",Content.Load<Effect>("GUI"));
+            Assets.SpriteFonts.Add("UIFontO", Content.Load<SpriteFont>("UIFontO"));
             // TODO: use this.Content to load your game content here
+
+            this.CurrentScene = new GameScenes.MainGame();
+            this.CurrentScene.Init(GraphicsDevice);
+
         }
 
         /// <summary>
@@ -59,10 +84,10 @@ namespace ColonyGame
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+            float seconds = (float)gameTime.ElapsedGameTime.Milliseconds / 1000f;
 
-            // TODO: Add your update logic here
+            CurrentScene.HandleInput(seconds);
+            CurrentScene.Update(seconds);
 
             base.Update(gameTime);
         }
@@ -74,9 +99,10 @@ namespace ColonyGame
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+            float seconds = (float)gameTime.ElapsedGameTime.Milliseconds / 1000f;
 
             // TODO: Add your drawing code here
-
+            CurrentScene.Render(seconds, GraphicsDevice, spriteBatch);
             base.Draw(gameTime);
         }
     }
